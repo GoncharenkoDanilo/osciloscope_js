@@ -1,0 +1,152 @@
+body{
+	font-family: 'Comic Sans MS', cursive;
+	background-color: #DDEEFF;	
+}
+
+input[type=number]{
+    width: 80px;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#width
+{
+	width: 50px;
+}
+
+#color_box 
+{
+	margin-left: 40%;
+}
+
+.left
+{
+	float: left;
+	width: 50%;
+}
+
+#title_box {
+
+min-height: 5%;
+height: auto; /* Высота блока */
+border-radius: 10px; /* Радиус границ*/
+background-color: #DDEEFF; /* Фоновый цвет*/
+border: 2px solid #D4D4D4; /* Ширина и цвет границ*/
+box-shadow: 0 0 15px #A9A9A9; /* Размер и цвет тени блока*/
+
+}
+
+#content {
+
+height: 80%;
+border-radius: 10px; /* Радиус границ*/
+background-color: #DDEEFF; /* Фоновый цвет*/
+border: 2px solid #D4D4D4; /* Ширина и цвет границ*/
+box-shadow: 0 0 15px #A9A9A9; /* Размер и цвет тени блока*/
+
+}
+
+#center {
+margin-top: 2%;
+margin-left: auto;
+margin-right: auto;
+width: 80%;
+height: 80%;
+border-radius: 10px; /* Радиус границ*/
+background-color: #ffffff; /* Фоновый цвет*/
+border: 2px solid #D4D4D4; /* Ширина и цвет границ*/
+box-shadow: 0 0 15px #A9A9A9; /* Размер и цвет тени блока*/
+
+}
+
+#generator 
+{
+
+width: 35%;
+height: 60%;
+margin-left: 2%;
+margin-top: 11%;
+border-radius: 10px; /* Радиус границ*/
+background-color: grey; /* Фоновый цвет*/
+border: 2px solid #D4D4D4; /* Ширина и цвет границ*/
+box-shadow: 0 0 15px #A9A9A9; /* Размер и цвет тени блока*/
+ float: left;
+}
+
+#oscilloscope 
+{
+
+width: 50%;
+height: 80%;
+margin-left: 48%;
+margin-top: 3%;
+border-radius: 10px; /* Радиус границ*/
+background-color: grey; /* Фоновый цвет*/
+border: 2px solid #D4D4D4; /* Ширина и цвет границ*/
+box-shadow: 0 0 15px #A9A9A9; /* Размер и цвет тени блока*/
+
+}
+
+#display
+{
+	background-color: black;
+	border-radius: 10px;
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+#oscilloscope_dashboard
+{
+margin-left: 2%;
+width: 35%;
+height: 31%;
+margin-top: 5%;
+border-radius: 10px; /* Радиус границ*/
+background-color: darkgrey; /* Фоновый цвет*/
+border: 2px solid #D4D4D4; /* Ширина и цвет границ*/
+box-shadow: 0 0 15px #A9A9A9; /* Размер и цвет тени блока*/
+padding-left:2%;
+float: left;
+
+}
+
+#generator_dashboard
+{
+
+width: 55%;
+height: 43%;
+margin-left: 2%;
+margin-top: 5%;
+border-radius: 10px; /* Радиус границ*/
+background-color: darkgrey; /* Фоновый цвет*/
+border: 2px solid #D4D4D4; /* Ширина и цвет границ*/
+box-shadow: 0 0 15px #A9A9A9; /* Размер и цвет тени блока*/
+padding-left:2%;
+}
+
+#connection{
+	width: 15%;
+	z-index: 2;
+	position: absolute;
+	margin-left: 26%;
+	margin-top: 15%;
+}
+
+p {
+
+
+text-align: center;
+
+}
+
+#generator_title
+{
+	margin-top: 25%;
+}
+
+#oscilloscope_title
+{
+	margin-left: 63%;
+}
+

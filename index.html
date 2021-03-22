@@ -1,0 +1,73 @@
+<html>
+
+<head>
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/switch.css">
+<script src="script/main.js"></script>
+<title>Моделирование работы осцилографа и генератора переодических сигналов.</title>
+</head>
+
+<body onLoad="net()">
+	<div id="title_box">
+		<p class = "title">Программа обеспечивает развертку осцилографа 6, 3 и 1,5 секунды.
+		По умолчанию установлена развертка осциллографа 6 секунд. Частоту сигнала в диапазоне 0-20 Гц
+		ввести как число с фиксированной или плавающей точкой. Амплитуду сигнала ввести как целое число N.
+		Значение N в поле "Амплитуда" определяет амплитуду сигнала, которая равна N пикселям. Висота полотна
+		равна 240 пикселей, ширина 300 пикселей.
+		</p>
+	</div>
+	<br>
+	<div id="content">
+		<div id="center">
+			<img id = "connection" src="pictures/pic.png" alt="error">
+			<div id="generator">
+				<div id="generator_dashboard">
+					<div class ="left">
+						Частота (Гц)
+						Амплитуда
+					</div>
+					<div>
+						<input type="number" id = "frequency" value="2" step="0.1" min="0" max="20"><br>
+						<input type="number" id = "amplitude" value="120">
+					</div>
+					<hr> 
+					<label class="switch">
+  						<input id ="checkbox1" type="checkbox" onclick="check()">
+  						<span class="slider round"></span>
+					</label>
+					<div id="generator_title">
+					<h2>ГЕНЕРАТОР СИГНАЛОВ</h2>
+				</div>
+				</div>
+
+			 </div>
+			<div id="oscilloscope">
+				<div id="oscilloscope_dashboard">
+					Развертка <br>
+					<input type="radio" id="other" name="time" value="6" checked="true">
+					<label for="5">6 с</label>					
+					<input type="radio" id="female" name="time" value="3">
+					<label for="3">3 с</label>
+					<input type="radio" id="" name="time" value="1.5">
+					<label for="1.5">1.5 с</label><br>
+					 <hr> 
+
+					<label class="switch">
+  						<input id = "checkbox2" type="checkbox" onclick="check()">
+  						<span class="slider round"></span>
+					</label>
+				</div>
+				<div>
+					<canvas id = "display" width="300", height="240"></canvas>
+					<h2 id="oscilloscope_title">ОСЦИЛЛОГРАФ</h2>
+				</div>
+		</div>
+	</div>
+	<br>
+<div id = "color_box">
+	Линия развертки: <input id="color" type="color" value="#ffffff">
+	<input id="width" type="number"	value = "4" max = "5" min = "1"> 
+</div> 
+</body>
+
+</html>
